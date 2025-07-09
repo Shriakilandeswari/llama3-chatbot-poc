@@ -12,21 +12,39 @@ Includes both **Python** and **JavaScript (Node.js)** implementations. This chat
 
 - [Ollama](https://ollama.com) installed
 - LLaMA 3 model pulled:
-  ```bash
   ollama run llama3
-  ```
 
-# Python Version
+## Python Version
 
-cd python
-pip install -r requirements.txt
-python chatbot.py
+To set up and run the Python version:
 
-# JavaScript Version
+1. Navigate to the project root directory:
+   cd /llama3-chatbot-poc/python/
+=
+2. Create a virtual environment:
+   python3 -m venv venv
 
-cd js
-npm install
-node chatbot.js
+3. Activate the virtual environment:
+   source venv/bin/activate
+
+4. Install the required dependencies:
+   pip install requests
+
+5. Run the Python script:
+   python3 chatbot.py
+
+6. Deactivate the virtual environment when done:
+   deactivate
+
+## JavaScript Version
+
+To set up and run the JavaScript version:
+
+1. Navigate to the `js` directory:
+   cd js
+
+2. Run the JavaScript script:
+   node chatbot.js
 
 # API Endpoint Used
 
